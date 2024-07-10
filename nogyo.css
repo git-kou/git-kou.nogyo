@@ -1,0 +1,390 @@
+body {
+    margin:0;
+    background-image:url("img/back.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-color:rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:115%;
+}
+
+img {
+    max-width:100%;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+}
+
+h1 {
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+.load {
+    position:fixed;
+    z-index:999;
+    width:100%;
+    height:100%;
+    background-image:url("img/back.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-color:rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.top {
+    position:relative;
+    height:100vh;
+}
+
+.top::after {
+    content:"";
+    position:absolute;
+    background-image:url("img/top.jpg");
+    background-size:cover;
+    background-position: 40%;
+    width:50%;
+    height:100vh;
+}
+
+.top-logo {
+    position:fixed;
+    padding:10px;
+    top:0;
+    right:0;
+    z-index:10;
+    font-size:30px;
+    background-color:#00AA55;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    position:absolute;
+    z-index:2;
+    font-size:4.5vw;
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: white;
+    text-align:center;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.item {
+    margin-top:100px;
+}
+
+.item-box {
+    background-color:rgba(255,255,255,0.7);
+    height:80vh;
+    display:flex;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.item-text {
+    width:48%;
+    margin:0 auto;
+}
+
+.item-img1 {
+    width:50%;
+    height:80vh;
+    background-image:url("img/con2.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.item-img2 {
+    width:50%;
+    height:80vh;
+    background-image:url("img/con1.jpg");
+    background-size:cover;
+    background-position:60%;
+}
+
+.gall {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:10px 0 40px 0;
+}
+
+.gall-left {
+    width:50%;
+}
+
+.gall-left img {
+    width:100%;
+}
+
+.gall-right {
+    width:48%;
+    margin-right:5px;
+}
+
+.gall-right h3 {
+    text-align:center;
+    font-size:30px;
+}
+
+.list {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.list li {
+    width:30%;
+}
+
+.sns {
+    background-color:white;
+    width:50%;
+    min-width:400px;
+    margin:50px auto -40vh auto;
+    padding:20px;
+    position:relative;
+    z-index:2;
+}
+
+.sns h3 {
+    text-align:center;
+}
+
+span {
+    border-bottom: 1px solid black;
+    display:inline-block;
+}
+
+.btn {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.bt {
+    width:40%;
+    padding:12px;
+    color:white;
+    text-align:center;
+}
+
+.Facebook {
+    background-color:#0033CC;
+    border:2px solid #0033CC;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.Facebook::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+  }
+
+.Facebook:hover {
+    color: #0033CC;
+}
+
+.Facebook:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+.X{
+    background-color: #000000;
+    border:2px solid #000000;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.X::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+  }
+
+.X:hover {
+    color: #000000;
+  }
+
+.X:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+.Instagram{
+    background: linear-gradient(135deg, rgb(256, 153, 0)0%,rgb(256,0,0)50%, rgb(204, 51, 204)100%);
+    border:2px solid;
+    border-image:linear-gradient(135deg, rgb(256, 153, 0), rgb(256,0,0),rgb(204, 51, 204))1;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.Instagram::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+  }
+
+.Instagram:hover {
+   color:rgb(256, 20, 50);
+}
+
+.Instagram:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+.LINE{
+    background-color:#00FF00;
+    border:2px solid #00FF00;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.LINE::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: white;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+}
+
+.LINE:hover {
+    color: #00FF00;
+}
+
+.LINE:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+
+@media(min-width:501px) {
+    .LINE {
+        display:none;
+    }
+}
+
+.info-back {
+    background-image:url("img/bottom.jpg");
+    width:100%;
+    height:90vh;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.footer-logo {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:80%;
+}
+
+@media(max-width:500px) {
+
+    .logo {
+        font-size:6vw;
+    }
+
+    .item-box {
+        flex-direction: column;
+        align-items: initial;
+        height:initial;
+    }
+
+    .item-text {
+        width:95%
+    }
+
+    .item-img1,
+    .item-img2 {
+        width:100%;
+        height:50vh;
+    }
+
+    .remove {
+        flex-direction: column-reverse;
+    }
+
+    .gall {
+        flex-direction: column-reverse;
+    }
+
+    .gall-left {
+        width:100%;
+    }
+
+    .gall-right {
+        width:80%;
+    }
+
+    .list li {
+        width:40%;
+    }
+
+    .sns {
+        width:80%;
+        min-width:initial;
+        margin:50px auto -70vh auto;
+    }
+
+    .bt {
+        width:80%;
+    }
+}
