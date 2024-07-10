@@ -157,7 +157,7 @@ a {
     background-color:white;
     width:50%;
     min-width:400px;
-    margin:50px auto -40vh auto;
+    margin:50px auto 0 auto;
     padding:20px;
     position:relative;
     z-index:2;
@@ -381,7 +381,7 @@ span {
     .sns {
         width:80%;
         min-width:initial;
-        margin:50px auto -70vh auto;
+        margin:50px auto 0 auto;
     }
 
     .bt {
