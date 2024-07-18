@@ -157,7 +157,7 @@ a {
     background-color:white;
     width:50%;
     min-width:400px;
-    margin:50px auto 0 auto;
+    margin:50px auto -250px auto;
     padding:20px;
     position:relative;
     z-index:2;
@@ -325,6 +325,7 @@ span {
     background-size:cover;
     background-position:center;
     position:relative;
+    z-index:1;
 }
 
 .footer-logo {
@@ -381,7 +382,7 @@ span {
     .sns {
         width:80%;
         min-width:initial;
-        margin:50px auto 0 auto;
+        margin:50px auto -350px auto;
     }
 
     .bt {
